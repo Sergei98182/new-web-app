@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Моя веб-страница</title>
+    <meta charset="UTF-8">
+    <style>
+        .my-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div style="display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50px;"><button class="my-button">Нажми меня</button>
+</div>
+
+<div style="display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50px;"><form>
+    <label for="username">Имя пользователя:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" required>
+
+    <input type="submit" value="Войти">
+</form></div>
+
+<div style="display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40px;"><form>
+    <label for="fruit1">
+        <input type="checkbox" id="fruit1" name="fruit[]" value="apple"> Яблоко
+    </label>
+
+    <label for="fruit2">
+        <input type="checkbox" id="fruit2" name="fruit[]" value="banana"> Банан
+    </label>
+
+    <label for="fruit3">
+        <input type="checkbox" id="fruit3" name="fruit[]" value="orange"> Апельсин
+    </label>
+
+    <input type="submit" value="Отправить">
+</form>
+</div>
+
+<div style="display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40px;"><form>
+    <label for="country">Страна:</label>
+    <select id="country" name="country">
+        <option value="usa">США</option>
+        <option value="canada">Канада</option>
+        <option value="uk">Великобритания</option>
+        <option value="japan">Япония</option>
+    </select>
+
+    <input type="submit" value="Выбрать">
+</form>
+
+<script>
+    // Получаем кнопку из DOM
+    var button = document.querySelector('.my-button');
+
+    // Функция-обработчик события клика
+    function handleClick(event) {
+        alert('Кнопка была нажата!');
+    }
+
+    // Добавляем слушатель события клика на кнопку
+    button.addEventListener('click', handleClick);
+</script>
+</body>
+</html>

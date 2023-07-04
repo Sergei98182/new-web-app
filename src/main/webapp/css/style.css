@@ -1,0 +1,34 @@
+body {
+    max-width: 900px; /* ограничение максимальной ширины */
+    margin: 0 auto;
+}
+/* для всех блоков внутри body изменяем алгоритм расчета ширины блоков и добавляем все блокам поля 10px */
+body div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.header {
+    background: #CCA69E;
+    padding: 10px;
+}
+.left-sidebar {
+    width: 20%;
+    background: #8ED9B6;
+    float: left;
+}
+.content {
+    float: left;
+    width: 60%;
+}
+.right-sidebar {
+    width: 20%;
+    background: #FF9282;
+    float: left;
+}
+.footer {
+    background: #000;
+    clear: both; /* запрещаем обтекание с обоих сторон, блок выводится с новой строки */
+    color: #ccc;
+}

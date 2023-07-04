@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация с обратной связью</title>
+    <link rel="stylesheet" href="css/stylelogin.css">
+    <script language="JavaScript" type="text/javascript" src="js/form_validation.js"></script>
+
+
+
+</head>
+<body>
+<div class="container">
+    <form id="register-form" action="https://www.google.com/" method="get" name="regForm" onsubmit="return validation()">
+        <h2>Форма регистрации</h2>
+
+        <label for="username">Имя:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="lastname">Фамилия:</label>
+        <input type="text" id="lastname" name="lastname" required>
+
+
+        <label for="pwd1">Пароль:</label>
+        <input type="password" id="pwd1" name="pwd1" required>
+
+        <label for="pwd2">Повторите пароль::</label>
+        <input type="password" id="pwd2" name="pwd2" required>
+
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="country">Страна:</label>
+        <select id="country" name="country">
+            <option value="usa">США</option>
+            <option value="canada">Канада</option>
+            <option value="uk">Великобритания</option>
+            <option value="japan">Япония</option>
+        </select><br><br>
+
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+
+    <!--    <form id="feedback-form" action="#">-->
+    <!--        <h2>Форма обратной связи</h2>-->
+    <!--        <label for="name">Имя:</label>-->
+    <!--        <input type="text" id="name" name="name" required>-->
+
+    <!--        <label for="message">Сообщение:</label>-->
+    <!--        <textarea id="message" name="message" required></textarea>-->
+
+    <!--        <button type="submit">Отправить</button>-->
+    <!--    </form>-->
+    <!--</div>-->
+
+    <!--<script src="js/script.js"></script>-->
+</div>
+</body>
+</html>
